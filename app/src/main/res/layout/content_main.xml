@@ -15,12 +15,29 @@
     <ScrollView
         android:layout_width="match_parent"
         android:layout_height="match_parent">
-        <Button
-            android:id="@+id/navigation_view"
+        <LinearLayout
             android:layout_width="match_parent"
             android:layout_height="wrap_content"
-            android:text="NavigationView"
-            android:foreground="?android:attr/selectableItemBackground"/>
-
+            android:orientation="vertical">
+            <Button
+                android:id="@+id/navigation_normal"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:text="NavigationDrawer"/>
+            <TextView
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:text="ViewPager"/>
+            <Button
+                android:id="@+id/viewpager_normal"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:text="ViewPager"/>
+            <Button
+                android:id="@+id/viewpager_with_tab"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:text="ViewPagerWithTab"/>
+        </LinearLayout>
     </ScrollView>
 </RelativeLayout>

@@ -18,8 +18,11 @@
                 <category android:name="android.intent.category.LAUNCHER" />
             </intent-filter>
         </activity>
-        <activity android:name=".NavigationActivity"
+        <activity android:name=".NavigationDrawer.NavigationActivity"
             android:theme="@style/AppTheme.NoActionBar"/>
+        <activity android:name=".Tab.ViewPagerWithTabActivity"
+            android:theme="@style/AppTheme.NoActionBar"/>
+
     </application>
 
 </manifest>
