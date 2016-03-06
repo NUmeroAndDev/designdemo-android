@@ -29,15 +29,19 @@
                 android:layout_height="wrap_content"
                 android:text="ViewPager"/>
             <Button
-                android:id="@+id/viewpager_normal"
-                android:layout_width="match_parent"
-                android:layout_height="wrap_content"
-                android:text="ViewPager"/>
-            <Button
                 android:id="@+id/viewpager_with_tab"
                 android:layout_width="match_parent"
                 android:layout_height="wrap_content"
                 android:text="ViewPagerWithTab"/>
+            <TextView
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:text="ListView"/>
+            <Button
+                android:id="@+id/list_refresh"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:text="ListView"/>
         </LinearLayout>
     </ScrollView>
 </RelativeLayout>
