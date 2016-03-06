@@ -9,6 +9,7 @@ import android.view.MenuItem;
 import android.view.View;
 import android.widget.Button;
 
+import jp.numero.designdemoapplication.ListView.ListActivity;
 import jp.numero.designdemoapplication.NavigationDrawer.NavigationActivity;
 import jp.numero.designdemoapplication.Tab.ViewPagerWithTabActivity;
 
@@ -23,10 +24,10 @@ public class MainActivity extends AppCompatActivity implements View.OnClickListe
 
         Button navigationNormal = (Button)findViewById(R.id.navigation_normal);
         navigationNormal.setOnClickListener(this);
-        Button tabNormal = (Button)findViewById(R.id.viewpager_normal);
-        tabNormal.setOnClickListener(this);
         Button tabWithViewpager = (Button)findViewById(R.id.viewpager_with_tab);
         tabWithViewpager.setOnClickListener(this);
+        Button listRefresh = (Button)findViewById(R.id.list_refresh);
+        listRefresh.setOnClickListener(this);
     }
 
     @Override
@@ -52,11 +53,11 @@ public class MainActivity extends AppCompatActivity implements View.OnClickListe
             case R.id.navigation_normal:
                 intent = new Intent(this, NavigationActivity.class);
                 break;
-            case R.id.viewpager_normal:
-                intent = new Intent(this, ViewPagerWithTabActivity.class);
-                break;
             case R.id.viewpager_with_tab:
                 intent = new Intent(this, ViewPagerWithTabActivity.class);
+                break;
+            case R.id.list_refresh:
+                intent = new Intent(this, ListActivity.class);
                 break;
         }
         startActivity(intent);

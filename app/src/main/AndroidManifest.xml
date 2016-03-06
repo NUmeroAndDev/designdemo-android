@@ -22,6 +22,8 @@
             android:theme="@style/AppTheme.NoActionBar"/>
         <activity android:name=".Tab.ViewPagerWithTabActivity"
             android:theme="@style/AppTheme.NoActionBar"/>
+        <activity android:name=".ListView.ListActivity"
+            android:theme="@style/AppTheme.NoActionBar"/>
 
     </application>
 
